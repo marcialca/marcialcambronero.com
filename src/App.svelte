@@ -12,7 +12,7 @@
 			<p>I'm a Frontend engineer, living in Costa Rica</p>
 			<p>I like to develop simple but pleasing interfaces that help users have better experiences.</p>
 			<p>I'm currently working at <a href="https://www.backcountry.com/" target="_blank" rel="noopener">Backcountry</a> as a Senior Frontend Engineer.</p>
-			<p>I'm also a fan of gaming, in particular sim-racing, and reading books.</p>
+			<p>I'm also a fan of gaming (in particular sim-racing), and reading books.</p>
 		</div>
 	</div>
 	<div class="section">
