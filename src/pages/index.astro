@@ -1,0 +1,69 @@
+---
+import Heading from '../components/Heading.astro';
+import '../styles/global.css';
+// Full Astro Component Syntax:
+// https://docs.astro.build/basics/astro-components/
+---
+
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.ico" />
+		<meta name="generator" content={Astro.generator} />
+		<title>Marcial Cambronero</title>
+	</head>
+
+	<body class="bg-slate-800 text-white">
+		<main class="grid place-items-center content-center">
+			<h1 class="text-7xl font-bold mb-6">Hi, I'm Marcial</h1>
+			<!-- Create a shadow that gets followed depending on the mouse position -->
+			<img class="border-4 m-2 mb-8 rounded-full" src="/images/profile.jpeg" width="150px" height="150px" alt="Profile">
+			<div class="w-lg mb-4">
+				<Heading title="About" />
+				<div class="pl-2 font-light">
+					<p>I'm a Frontend engineer, living in Costa Rica</p>
+					<p>I like to develop simple but pleasing interfaces that help users have better experiences.</p>
+					<p>I'm currently working at <a class="text-orange-500 font-bold" href="https://www.imprivata.com/" target="_blank" rel="noopener">Imprivata</a> as a Frontend Engineer.</p>
+					<p>I'm also a fan of gaming (in particular sim-racing), and reading books.</p>
+				</div>
+			</div>
+			<div class="w-lg mb-8">
+				<Heading title="Experience" />
+				<div class="pl-2">
+					<ul class="list-disc pl-4">
+						<li>Javascript/React.js/Next.js <span class="font-thin text-amber-600">(High)</span></li>
+						<li>CSS/SASS/CSS-in-JS <span class="font-thin text-amber-600">(Medium)</span></li>
+						<li>HTML <span class="font-thin text-amber-600">(Medium)</span></li>
+						<li>Accessibility <span class="font-thin text-amber-600">(Medium)</span></li>
+					</ul>
+				</div>
+			</div>
+			<div class="w-lg mb-8">
+				<Heading title="Contact" />
+				<div class="pl-2 flex gap-4">
+					<a href="https://www.linkedin.com/in/marcialcambronero/" target="_blank" rel="noopener" class="flex flex-col items-center w-20">
+						<svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="32" height="36" viewBox="0 0 24 28" class="fill-white">
+							<title>linkedin-square</title>
+							<path d="M3.703 22.094h3.609v-10.844h-3.609v10.844zM7.547 7.906c-0.016-1.062-0.781-1.875-2.016-1.875s-2.047 0.812-2.047 1.875c0 1.031 0.781 1.875 2 1.875h0.016c1.266 0 2.047-0.844 2.047-1.875zM16.688 22.094h3.609v-6.219c0-3.328-1.781-4.875-4.156-4.875-1.937 0-2.797 1.078-3.266 1.828h0.031v-1.578h-3.609s0.047 1.016 0 10.844v0h3.609v-6.062c0-0.313 0.016-0.641 0.109-0.875 0.266-0.641 0.859-1.313 1.859-1.313 1.297 0 1.813 0.984 1.813 2.453v5.797zM24 6.5v15c0 2.484-2.016 4.5-4.5 4.5h-15c-2.484 0-4.5-2.016-4.5-4.5v-15c0-2.484 2.016-4.5 4.5-4.5h15c2.484 0 4.5 2.016 4.5 4.5z"></path>
+							</svg>
+						<span>LinkedIn</span>
+					</a>	
+					<a href="https://github.com/marcialca" target="_blank" rel="noopener" class="flex flex-col items-center w-20">
+						<svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="32" height="36" viewBox="0 0 24 28" class="fill-white">
+							<title>github-square</title>
+							<path d="M8.109 18.75v0c0.031-0.047 0.016-0.141-0.047-0.203-0.078-0.063-0.172-0.078-0.219-0.031-0.031 0.047-0.016 0.141 0.047 0.203 0.078 0.063 0.172 0.078 0.219 0.031zM7.672 18.109c-0.047-0.063-0.125-0.094-0.187-0.063-0.047 0.031-0.047 0.125 0 0.187 0.063 0.078 0.141 0.109 0.187 0.078v0c0.047-0.031 0.047-0.125 0-0.203zM7.031 17.484v0c0.016-0.031-0.016-0.094-0.078-0.125-0.047-0.016-0.109-0.016-0.125 0.031-0.031 0.047 0 0.094 0.063 0.125 0.063 0.016 0.125 0.016 0.141-0.031zM7.359 17.844v0c0.031-0.031 0.031-0.109-0.031-0.156-0.047-0.063-0.125-0.078-0.156-0.047-0.047 0.047-0.031 0.109 0.016 0.172 0.047 0.047 0.125 0.078 0.172 0.031zM8.703 19.016v0c0.016-0.063-0.047-0.141-0.141-0.172s-0.172 0-0.203 0.063c-0.016 0.063 0.047 0.141 0.141 0.172s0.172 0 0.203-0.063zM9.359 19.063v0c0-0.063-0.078-0.125-0.187-0.125-0.094 0-0.156 0.063-0.156 0.125s0.078 0.125 0.172 0.125 0.172-0.063 0.172-0.125zM9.969 18.953v0c-0.016-0.063-0.109-0.094-0.203-0.078s-0.156 0.078-0.141 0.141 0.094 0.109 0.187 0.094 0.156-0.094 0.156-0.156zM20 14c0-4.422-3.578-8-8-8s-8 3.578-8 8c0 3.531 2.297 6.531 5.469 7.594 0.406 0.078 0.547-0.172 0.547-0.391 0-0.187 0-0.812-0.016-1.484 0 0-2.219 0.484-2.688-0.953 0 0-0.359-0.922-0.891-1.156 0 0-0.719-0.5 0.063-0.5 0 0 0.781 0.063 1.219 0.828 0.703 1.234 1.875 0.875 2.328 0.672 0.078-0.516 0.281-0.875 0.516-1.078-1.781-0.203-3.656-0.891-3.656-3.953 0-0.875 0.313-1.578 0.828-2.141-0.078-0.203-0.359-1.016 0.078-2.125 0.672-0.203 2.203 0.828 2.203 0.828 0.641-0.187 1.313-0.266 2-0.266s1.359 0.078 2 0.266c0 0 1.531-1.031 2.203-0.828 0.438 1.109 0.156 1.922 0.078 2.125 0.516 0.562 0.828 1.266 0.828 2.141 0 3.078-1.875 3.75-3.656 3.953 0.281 0.25 0.547 0.734 0.547 1.484 0 1.062-0.016 1.922-0.016 2.188 0 0.219 0.141 0.469 0.547 0.391 3.172-1.062 5.469-4.062 5.469-7.594zM24 6.5v15c0 2.484-2.016 4.5-4.5 4.5h-15c-2.484 0-4.5-2.016-4.5-4.5v-15c0-2.484 2.016-4.5 4.5-4.5h15c2.484 0 4.5 2.016 4.5 4.5z"></path>
+						</svg>
+						<span>Github</span>
+					</a>
+				</div>
+			</div>
+
+		<footer class="w-lg mb-8 pl-2 font-thin text-sm text-slate-400">
+			<p>©️ All content and rights belong to Marcial Cambronero. Opinions and comments are always personal, unless otherwise noticed.</p>
+			<p>If you see something wrong, <a class="text-orange-500 font-bold" href="mailto:marcialcambronero@gmail.com">please let me know</a></p>
+		</footer>
+
+		</main>
+	</body>
+</html>
